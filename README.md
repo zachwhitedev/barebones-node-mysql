@@ -14,7 +14,7 @@
 12. You're back into your database as the root user. Now you just have to create a new user to access the database from your Node.js projects...
 13. Run this command, but replace with your own name and password: **CREATE USER 'yourname'@'%' IDENTIFIED BY 'yourpassword';**
 14. Then run this command, using the same credentials you just created: **GRANT ALL PRIVILEGES ON *.* TO 'yourname'@'%' IDENTIFIED BY 'yourpassword'**
-15. Note that if you want to limit the user's access to a certain database, or a certain database and table, the command would be **GRANT ALL PRIVILEGES ON thekrustykrab.* TO 'yourname'@'%' IDENTIFIED BY 'yourpassword'** or **GRANT ALL PRIVILEGES ON thekrustykrab.recipes TO 'yourname'@'%' IDENTIFIED BY 'yourpassword'**, respectively. To anyone new to using the SQL language, an asterisk pretty much means "all."
+15. Note that if you want to limit the user's access to a certain database, or a certain database and table, the command would be **GRANT ALL PRIVILEGES ON thekrustykrab.*** **TO 'yourname'@'%' IDENTIFIED BY 'yourpassword'** or **GRANT ALL PRIVILEGES ON thekrustykrab.recipes TO 'yourname'@'%' IDENTIFIED BY 'yourpassword'**, respectively. To anyone new to using the SQL language, an asterisk pretty much means "all."
 16. That's it! Now just run the command **exit** and you're good to go!
 
 Remember, you won't have any of your own databases/tables unless you now create them! A greate guide for making an example database can be found [here](https://dev.mysql.com/doc/refman/8.0/en/creating-database.html). Go into your access console again and enter your mySQL database (using command in line 10) to get started on running the queries :)
