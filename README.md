@@ -21,7 +21,8 @@ Remember, you won't have any of your own databases/tables unless you now create 
 
 ## An example of what an actual MySQL connection might look like, without using environment variables:
 
-<code>const express = require('express');
+<pre><code>
+const express = require('express');
 
 const app = express();
 
@@ -65,7 +66,7 @@ app.listen(5000, () => {
   console.log('serving running on port 5000');
 
 });
-</code>
+</code><pre>
 
 
 
