@@ -51,4 +51,4 @@ app.listen(5000, () => {
 });
 </code></pre>
 
-### npm install express mysql node-mysql dotenv
+**npm install express mysql node-mysql dotenv**
