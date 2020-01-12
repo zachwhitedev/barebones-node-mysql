@@ -22,30 +22,50 @@ Remember, you won't have any of your own databases/tables unless you now create 
 ## An example of what an actual MySQL connection might look like, without using environment variables:
 
 const express = require('express');
+
 const app = express();
 
+
 const mysql = require('mysql');
+
 const connection = mysql.createConnection({
+
   host: "198.242.71.14",
+
   user: "jeff",
+
   password: "oregonDucks1458",
+
   database: "sunshine_bakery"
+
 });
+
 
 connection.connect();
 
+
 connection.query('SELECT * FROM receipts', function(error, results, fields) {
+
   if (error) {
+
     console.log(error);
+
   }
+
   console.log(results);
+
 });
+
 
 connection.end();
 
+
 app.listen(5000, () => {
+
   console.log('serving running on port 5000');
+
 });
+
 
 
 
