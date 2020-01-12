@@ -53,4 +53,4 @@ app.listen(5000, () => {
 
 For dependencies: **npm install express mysql dotenv**
 
-A big thanks to @Kelgand for helping me along the way.
+A big thanks to [@Kelgand](https://github.com/kelgand) for helping me along the way.
