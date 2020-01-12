@@ -6,13 +6,13 @@
 4. run this command: **mysqld --initialize** and if you get an error, just ignore it and move on to step 5
 5. now that mySQL is installed, let's enter it by running: **sudo mysql**
 6. You'll notice that all of your commands from now on will be prefixed by **mysql>**
-7. Run this command, but change the word **yoursecretpassword123** to your own new password: **ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yoursecretpassword123';**
+7. Run this command, but change the word **yoursecretpassword123** to your own new password (**trust me**: make your password longer than 8 characters, and contain at least one number, one special character, and one uppercase letter. It will prevent mySQL errors for you in the future): **ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yoursecretpassword123';**
 8. Then run this command: **FLUSH PRIVILEGES;**
 9. Now exit mySQL by running this command: **exit**
 10. Now log back into mySQL using a new command: **mysql -u root -p** (you will have to always use this command from now on)
 11. Now enter the password you set in step 7 and hit enter.
 12. You're back into your database as the root user. Now you just have to create a new user to access the database from your Node.js projects...
-13. Run this command, but replace with your own name and password: **CREATE USER 'yourname'@'%' IDENTIFIED BY 'yourpassword';**
+13. Run this command, but replace with your own name and password (**again**: password should be longer than 8 characters, and include at least one special character, one number, and one uppercase letter): **CREATE USER 'yourname'@'%' IDENTIFIED BY 'yourpassword';**
 14. Then run this command, using the same credentials you just created: **GRANT ALL PRIVILEGES ON *.* TO 'yourname'@'%' IDENTIFIED BY 'yourpassword'**
 15. Note that if you want to limit the user's access to a certain database, or a certain database and table, the command would be **GRANT ALL PRIVILEGES ON thekrustykrab.*** **TO 'yourname'@'%' IDENTIFIED BY 'yourpassword'** or **GRANT ALL PRIVILEGES ON thekrustykrab.recipes TO 'yourname'@'%' IDENTIFIED BY 'yourpassword'**, respectively. To anyone new to using the SQL language, an asterisk pretty much means "all."
 16. That's it! Now just run the command **exit** and you're good to go!
@@ -30,7 +30,7 @@ const app = express();
 const connection = mysql.createConnection({
   host: "198.242.71.14",
   user: "jeff",
-  password: "oregonDucks1458",
+  password: "oregonDucks!1992",
   database: "sunshine_bakery"
 });
 
