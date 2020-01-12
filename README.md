@@ -19,7 +19,7 @@
 
 Remember, you won't have any of your own databases/tables unless you now create them! A greate guide for making an example database can be found [here](https://dev.mysql.com/doc/refman/8.0/en/creating-database.html). Go into your access console again and enter your mySQL database (using command in line 10) to get started on running the queries :)
 
-## An example of what an actual MySQL connection might look like, without using environment variables:
+## An example of what an actual remote MySQL connection might look like, without using environment variables:
 
 <pre><code>
 const express = require('express');
