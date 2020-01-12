@@ -4,7 +4,7 @@
 2. install mySQL onto the droplet if you haven't already: **sudo mysql_secure_installation**
 3. press y and hit enter and accept all the default settings.
 4. run this command: **mysqld --initialize** and if you get an error, just ignore it and move on to step 5
-5. now that mySQL is instalLed, let's enter it by running: **sudo mysql**
+5. now that mySQL is installed, let's enter it by running: **sudo mysql**
 6. You'll notice that all of your commands from now on will be prefixed by **mysql>**
 7. Run this command, but change the word **yoursecretpassword123** to your own new password: **ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yoursecretpassword123';**
 8. Then run this command: **FLUSH PRIVILEGES;**
