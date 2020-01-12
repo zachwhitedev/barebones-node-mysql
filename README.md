@@ -1,6 +1,6 @@
 ## List of commands that got my Ubunutu 18.04 server (DigitalOcean Droplet) prepared for running this code:
 
-1. first, go into the **access console** of your DigitalOcean droplet and run the command **sudo apt update**
+1. first, go into the **access console** [(click 'launch console')](https://www.digitalocean.com/docs/images/droplets/pages/access.949745c3cdd9acee5832e28ac3e3ced353e92199d4a0375cf7a380c09aacbdde.png) of your DigitalOcean droplet and run the command **sudo apt update**
 2. install mySQL onto the droplet if you haven't already: **sudo mysql_secure_installation**
 3. press y and hit enter and accept all the default settings.
 4. run this command: **mysqld --initialize** and if you get an error, just ignore it and move on to step 5
