@@ -49,4 +49,6 @@ app.listen(5000, () => {
   console.log('serving running on port 5000');
 
 });
-</code><pre>
+</code></pre>
+
+### npm install express mysql node-mysql dotenv
