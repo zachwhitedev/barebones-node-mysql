@@ -34,9 +34,7 @@ const connection = mysql.createConnection({
   host: "198.242.71.14",
 
   user: "jeff",
-
   password: "oregonDucks1458",
-
   database: "sunshine_bakery"
 
 });
@@ -57,12 +55,9 @@ connection.query('SELECT * FROM receipts', function(error, results, fields) {
 
 });
 
-
 connection.end();
 
-
 app.listen(5000, () => {
-
   console.log('serving running on port 5000');
 
 });
