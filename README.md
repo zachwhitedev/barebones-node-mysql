@@ -52,3 +52,5 @@ app.listen(5000, () => {
 </code></pre>
 
 For dependencies: **npm install express mysql dotenv**
+
+A big thanks to @Kelgand for helping me along the way.
