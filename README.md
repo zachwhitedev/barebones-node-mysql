@@ -21,7 +21,10 @@ Remember, you won't have any of your own databases/tables unless you now create 
 
 ## An example of what an actual remote MySQL connection might look like, without using environment variables:
 
+(assumes a database name of 'sunshine_bakery' and a table in that database named 'receipts')
+
 <pre><code>
+
 const express = require('express');
 const mysql = require('mysql');
 
