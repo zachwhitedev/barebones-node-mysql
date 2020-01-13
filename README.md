@@ -48,7 +48,7 @@ connection.query('SELECT * FROM receipts', function(error, results, fields) {
 connection.end();
 
 app.listen(5000, () => {
-  console.log('serving running on port 5000');
+  console.log('server running on port 5000');
 
 });
 </code></pre>
