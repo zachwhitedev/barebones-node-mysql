@@ -13,7 +13,7 @@
 11. Now enter the password you set in step 7 and hit enter.
 12. You're back into your database as the root user. Now you just have to create a new user to access the database from your Node.js projects...
 13. Run this command, but replace with your own name and password (**again**: password should be longer than 8 characters, and include at least one special character, one number, and one uppercase letter): <code>CREATE USER 'yourname'@'%' IDENTIFIED BY 'yourpassword';</code>
-14. Then run this command, using the same credentials you just created: <code>GRANT ALL PRIVILEGES ON *.* TO 'yourname'@'%' IDENTIFIED BY 'yourpassword';</code>
+14. Then run this command, using the same credentials you just created: <code>GRANT ALL PRIVILEGES ON \*.\* TO 'yourname'@'%' IDENTIFIED BY 'yourpassword';</code>
 15. Note that if you want to limit the user's access to a certain database, or a certain database and table, the command would be <code>GRANT ALL PRIVILEGES ON thekrustykrab.* TO 'yourname'@'%' IDENTIFIED BY 'yourpassword';</code> or <code>GRANT ALL PRIVILEGES ON thekrustykrab.recipes TO 'yourname'@'%' IDENTIFIED BY 'yourpassword';</code>, respectively. To anyone new to using the SQL language, an asterisk pretty much means "all."
 16. That's it! Now just run the command <code>exit;</code> and you're good to go!
 
