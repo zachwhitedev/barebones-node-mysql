@@ -32,7 +32,7 @@ const app = express();
 const connection = mysql.createConnection({
   host: "198.242.71.14",
   user: "jeff",
-  password: "oregonDucks!1992",
+  password: "yoursecretpassword123",
   database: "sunshine_bakery"
 });
 
